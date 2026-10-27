@@ -41,7 +41,7 @@ Usuwa plik. Uwaga: usunięcie zwykle omija kosz systemowy, dlatego przed wykonan
 ```bash
 rm archive.md
 ```
-## 9. `cat` — wyświetlanie zawartości
+## 9. `cat` — wyświetlanie zawartości(cat to kot po angielsku)
 Wyświetla zawartość pliku tekstowego w terminalu.
 ```bash
 cat bash.md
