@@ -24,7 +24,7 @@ Pobiera pakiety wymagane przez projekt.
 ```bash
 dotnet restore
 ```
-## 6. `dotnet build` — kompilacja
+## 6. `dotnet build` — kompilacja (bob the builer)
 Kompiluje projekt i wyświetla ewentualne błędy oraz ostrzeżenia.
 ```bash
 dotnet build
