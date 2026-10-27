@@ -30,7 +30,9 @@ Pobiera i integruje zmiany ze zdalnego repozytorium.
 git pull
 ```
 ## 7. `git fetch` — pobieranie informacji
-Pobiera informacje o zmianach na zdalnym serwerze bez automatycznej integracji.
+Pobiera informacje o zmianach na zdalnym 
+serwerze bez automatycznej integracji.
+"ggsfdsf"
 ```bash
 git fetch origin
 ```
