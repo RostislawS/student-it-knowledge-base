@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Git - Student IT Knowledge Base</title>
+<link rel="stylesheet" href="../styles.css">
+</head>
+<body>
+<header>
+<h1>Git – System kontroli wersji</h1>
+<p>Podstawowe polecenia i praca z repozytorium Git.</p>
+</header>
+<nav>
+<a href="../index.html">Strona główna</a>
+<a href="bash.html">Bash</a>
+<a href="git.html">Git</a>
+<a href="dotnet-cli.html">.NET CLI</a>
+</nav>
+<main>
+<section>
+<h2>Wprowadzenie do Git</h2>
+<p>
+               Git to rozproszony system kontroli wersji.
+               Pozwala śledzić zmiany w plikach, tworzyć gałęzie
+               i współpracować z innymi programistami.
+</p>
+</section>
+<section>
+<h2>Podstawowe polecenia Git</h2>
+<table>
+<caption>Najważniejsze polecenia Git</caption>
+<thead>
+<tr>
+<th>Polecenie</th>
+<th>Przykład</th>
+<th>Opis</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>git clone</td>
+<td>git clone URL</td>
+<td>Kopiuje repozytorium na komputer.</td>
+</tr>
+<tr>
+<td>git status</td>
+<td>git status</td>
+<td>Pokazuje stan plików.</td>
+</tr>
+<tr>
+<td>git add</td>
+<td>git add index.html</td>
+<td>Dodaje pliki do następnego commita.</td>
+</tr>
+<tr>
+<td>git commit</td>
+<td>git commit -m "Opis"</td>
+<td>Zapisuje zmiany w historii.</td>
+</tr>
+<tr>
+<td>git push</td>
+<td>git push origin main</td>
+<td>Wysyła zmiany na serwer.</td>
+</tr>
+<tr>
+<td>git pull</td>
+<td>git pull origin main</td>
+<td>Pobiera i integruje zmiany.</td>
+</tr>
+<tr>
+<td>git fetch</td>
+<td>git fetch origin</td>
+<td>Pobiera informacje o zmianach.</td>
+</tr>
+<tr>
+<td>git branch</td>
+<td>git branch</td>
+<td>Wyświetla gałęzie.</td>
+</tr>
+<tr>
+<td>git switch</td>
+<td>git switch main</td>
+<td>Przełącza gałąź.</td>
+</tr>
+<tr>
+<td>git log</td>
+<td>git log --oneline</td>
+<td>Wyświetla historię commitów.</td>
+</tr>
+</tbody>
+</table>
+</section>
+<section>
+<h2>Typowy proces pracy z Git</h2>
+<ol>
+<li>Synchronizacja projektu: <code>git pull origin main</code></li>
+<li>Utworzenie gałęzi: <code>git switch -c feature/name</code></li>
+<li>Wprowadzenie zmian w plikach.</li>
+<li>Dodanie zmian: <code>git add .</code></li>
+<li>Zapisanie zmian: <code>git commit -m "Opis"</code></li>
+<li>Wysłanie gałęzi: <code>git push -u origin feature/name</code></li>
+<li>Utworzenie Pull Request na GitHub.</li>
+</ol>
+</section>
+<section>
+<h2>Dokumentacja</h2>
+<ul>
+<li><a href="../docs/warp/git.md">Nasza dokumentacja Git</a></li>
+<li><a href="https://git-scm.com/doc">Oficjalna dokumentacja Git</a></li>
+</ul>
+</section>
+</main>
+<footer>
+<p>Projekt edukacyjny – Student IT Knowledge Base.</p>
+</footer>
+</body>
+</html>
