@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Ściąga UKOS z podstawowymi poleceniami Bash i zasadami bezpiecznej pracy w terminalu.">
+  <title>Bash — ściąga UKOS</title>
+  <link rel="stylesheet" href="../styles.css">
+</head>
+<body>
+  <header class="site-header">
+    <div class="container">
+      <a class="logo" href="../index.html" aria-label="Strona główna">UKOS</a>
+      <nav class="main-nav" aria-label="Nawigacja główna">
+        <a href="../index.html">Strona główna</a>
+        <a href="#bash-cheatsheet" aria-current="page">Bash</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="container page-content" id="bash-cheatsheet">
+    <header class="page-heading">
+      <p class="eyebrow">UKOS / TERMINAL</p>
+      <h1>Ściąga Bash</h1>
+      <p class="lead">
+        Bash pozwala wykonywać polecenia, poruszać się po katalogach oraz
+        tworzyć, kopiować, przenosić i usuwać pliki. Poniżej znajdziesz
+        krótkie zestawienie najczęściej używanych poleceń.
+      </p>
+    </header>
+
+    <section class="content-section" aria-labelledby="safety-heading">
+      <h2 id="safety-heading">Zasady bezpiecznej pracy w terminalu</h2>
+      <ul class="safety-list">
+        <li>Przed wykonaniem polecenia sprawdź, w jakim katalogu się znajdujesz.</li>
+        <li>Uważnie sprawdzaj nazwy i ścieżki plików, szczególnie przed ich usunięciem.</li>
+        <li>Nie uruchamiaj nieznanych poleceń bez zrozumienia, co robią.</li>
+        <li>Używaj uprawnień administratora tylko wtedy, gdy są rzeczywiście potrzebne.</li>
+        <li>W razie wątpliwości najpierw wyświetl zawartość katalogu lub pliku.</li>
+      </ul>
+    </section>
+
+    <section class="content-section" aria-labelledby="commands-heading">
+      <h2 id="commands-heading">Podstawowe polecenia</h2>
+      <div class="table-wrapper">
+        <table class="cheatsheet-table">
+          <caption>Najważniejsze polecenia Bash — składnia, przykład i opis działania.</caption>
+          <thead>
+            <tr>
+              <th scope="col">Polecenie</th>
+              <th scope="col">Przykład</th>
+              <th scope="col">Opis</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <th scope="row"><code>pwd</code></th>
+              <td><code>pwd</code></td>
+              <td>Wyświetla ścieżkę aktualnego katalogu.</td>
+            </tr>
+            <tr>
+              <th scope="row"><code>ls</code></th>
+              <td><code>ls -la</code></td>
+              <td>Wyświetla pliki i katalogi. Opcja <code>-la</code> pokazuje również ukryte pliki i szczegółowe informacje.</td>
+            </tr>
+            <tr>
+              <th scope="row"><code>cd</code></th>
+              <td><code>cd docs/ukos</code><br><code>cd ..</code></td>
+              <td>Zmienia bieżący katalog. <code>..</code> oznacza katalog nadrzędny.</td>
+            </tr>
+            <tr>
+              <th scope="row"><code>mkdir</code></th>
+              <td><code>mkdir -p docs/ukos</code></td>
+              <td>Tworzy nowy katalog. Opcja <code>-p</code> pozwala utworzyć również katalogi nadrzędne.</td>
+            </tr>
+            <tr>
+              <th scope="row"><code>touch</code></th>
+              <td><code>touch bash.md</code></td>
+              <td>Tworzy pusty plik, jeśli plik nie istnieje, albo aktualizuje czas jego modyfikacji.</td>
+            </tr>
+            <tr>
+              <th scope="row"><code>cp</code></th>
+              <td><code>cp bash.md bash-backup.md</code><br><code>cp -r docs docs-backup</code></td>
+              <td>Kopiuje plik. Opcja <code>-r</code> służy do kopiowania katalogów.</td>
+            </tr>
+            <tr>
+              <th scope="row"><code>mv</code></th>
+              <td><code>mv bash-backup.md archive.md</code></td>
+              <td>Przenosi plik lub zmienia jego nazwę.</td>
+            </tr>
+            <tr>
+              <th scope="row"><code>rm</code></th>
+              <td><code>rm archive.md</code></td>
+              <td>Usuwa plik. Uwaga: usunięcie zwykle omija kosz systemowy, dlatego przed wykonaniem polecenia sprawdź nazwę pliku.</td>
+            </tr>
+            <tr>
+              <th scope="row"><code>cat</code></th>
+              <td><code>cat bash.md</code></td>
+              <td>Wyświetla zawartość pliku tekstowego w terminalu.</td>
+            </tr>
+            <tr>
+              <th scope="row"><code>clear</code></th>
+              <td><code>clear</code></td>
+              <td>Czyści widok terminala, ale nie usuwa plików ani historii poleceń.</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </section>
+
+    <footer class="page-footer">
+      <p>
+        Materiał źródłowy:
+        <a href="../docs/ukos/bash.md">oryginalny plik bash.md</a>.
+        Więcej informacji znajdziesz w
+        <a href="https://www.gnu.org/software/bash/manual/" target="_blank" rel="noopener noreferrer">oficjalnym GNU Bash Manual</a>.
+      </p>
+    </footer>
+  </main>
+</body>
+</html>
