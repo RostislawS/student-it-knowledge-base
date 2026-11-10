@@ -1,0 +1,68 @@
+<!doctype html>
+<html lang="pl">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Podstawy .NET CLI</title>
+  <link rel="stylesheet" href="../styles.css">
+</head>
+<body>
+  <header>
+    <h1>Podstawy .NET CLI</h1>
+    <p>.NET CLI to narzędzie wiersza poleceń do pracy z projektami .NET: od sprawdzenia środowiska, przez utworzenie i kompilację, po uruchomienie aplikacji.</p>
+  </header>
+
+  <nav aria-label="Nawigacja po stronie">
+    <ul>
+      <li><a href="#polecenia">Polecenia</a></li>
+      <li><a href="#sekwencja">Pełna sekwencja</a></li>
+      <li><a href="#materialy">Materiały</a></li>
+    </ul>
+  </nav>
+
+  <main>
+    <section id="polecenia">
+      <h2>Podstawowe polecenia</h2>
+      <table>
+        <caption>Przegląd poleceń .NET CLI</caption>
+        <thead>
+          <tr><th scope="col">Polecenie</th><th scope="col">Opis</th></tr>
+        </thead>
+        <tbody>
+          <tr><td><code>dotnet --version</code></td><td>Wyświetla wersję aktywnego SDK.</td></tr>
+          <tr><td><code>dotnet --list-sdks</code></td><td>Wyświetla zainstalowane zestawy SDK.</td></tr>
+          <tr><td><code>dotnet new list</code></td><td>Pokazuje dostępne szablony projektów.</td></tr>
+          <tr><td><code>dotnet new console</code></td><td>Tworzy projekt aplikacji konsolowej.</td></tr>
+          <tr><td><code>dotnet restore</code></td><td>Przywraca zależności projektu.</td></tr>
+          <tr><td><code>dotnet build</code></td><td>Kompiluje projekt.</td></tr>
+          <tr><td><code>dotnet run</code></td><td>Kompiluje (jeśli potrzeba) i uruchamia aplikację.</td></tr>
+          <tr><td><code>dotnet clean</code></td><td>Usuwa wyniki wcześniejszych kompilacji.</td></tr>
+        </tbody>
+      </table>
+    </section>
+
+    <section id="sekwencja">
+      <h2>Utworzenie i uruchomienie aplikacji</h2>
+      <p>Wykonaj polecenia kolejno w terminalu. Projekt zostanie utworzony w osobnym katalogu.</p>
+      <pre><code>dotnet --version
+dotnet --list-sdks
+dotnet new list
+mkdir MojaAplikacja
+cd MojaAplikacja
+dotnet new console
+dotnet restore
+dotnet build
+dotnet run
+dotnet clean</code></pre>
+    </section>
+
+    <section id="materialy">
+      <h2>Materiały</h2>
+      <ul>
+        <li><a href="../docs/prg1/dotnet-cli.md">Materiały kursowe: dotnet-cli.md</a></li>
+        <li><a href="https://learn.microsoft.com/dotnet/core/tools/">Oficjalna dokumentacja .NET CLI</a></li>
+      </ul>
+    </section>
+  </main>
+</body>
+</html>
